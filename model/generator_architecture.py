@@ -1,9 +1,3 @@
-"""
-Generator Architecture Definition
-Define your trained GAN generator model architecture here.
-
-This file should match the exact architecture you used during training in Google Colab.
-"""
 
 import torch
 import torch.nn as nn
