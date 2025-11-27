@@ -1,4 +1,4 @@
-# Sketch2FaceGAN
+# Forensic Sketching Using GAN
 
 Minimal Flask + PyTorch app that turns a sketch into a realistic face using your own trained generator.
 
