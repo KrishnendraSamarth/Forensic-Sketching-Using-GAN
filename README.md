@@ -15,7 +15,7 @@ This project follows the **pix2pix** image-to-image translation setup:
 
 Because the architecture matches the classic pix2pix paper, you can fine-tune it in Google Colab (or any PyTorch environment), export the generator weights, and drop them straight into this app for inference.
 
-## 🎯 Download Pretrained GAN Model
+##  Download Pretrained GAN Model
 
 The GAN generator weights are hosted on Google Drive.  
 1. Download from this link:  
@@ -92,10 +92,6 @@ static/script.js           # Client logic
 - **Max upload size**: update `app.config['MAX_CONTENT_LENGTH']` in `app.py` (default 16 MB).
 - **Server settings**: tweak the `app.run()` call for port/host/debug options.
 
-## Troubleshooting
-- **“Model file not found”** → verify `model/generator_final.pth` exists; app falls back to a dummy net otherwise.
-- **Import errors** → run `pip install -r requirements.txt` inside the active virtualenv.
-- **CUDA issues** → install the CUDA-enabled PyTorch build or force CPU by uninstalling CUDA drivers.
 
 ## Notes
 - Designed for local demos; harden the Flask app before deploying publicly.
