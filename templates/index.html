@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forensic Sketching using GAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span>Forensic GAN</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#technology">Technology</a>
+                <a href="#try-it" class="nav-cta">Try It</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-main">Forensic Sketching</span>
+                <span class="title-accent">using GAN</span>
+            </h1>
+            <p class="hero-subtitle">Reconstructing human faces from forensic sketches using Generative Adversarial Networks.</p>
+            <p class="hero-tagline">Where AI meets investigation.</p>
+            <a href="#try-it" class="hero-btn" id="trySketchBtn">
+                <span>Try Sketch Generator</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🧠</span>
+                    About the Project
+                </h2>
+            </div>
+            <div class="about-content">
+                <div class="about-card glass-card">
+                    <p class="about-text">
+                        <strong>Forensic Sketching using GAN</strong> is an AI-driven system designed to assist law enforcement agencies in identifying suspects based on hand-drawn sketches. By leveraging Generative Adversarial Networks (GANs), the model learns to reconstruct realistic human faces from sketches, improving speed and accuracy in investigations.
+                    </p>
+                    <p class="about-text">
+                        This cutting-edge technology transforms traditional forensic sketching into a powerful digital tool, enabling investigators to generate photorealistic face reconstructions from witness descriptions and artist sketches in seconds.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>High Accuracy</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Real-time Processing</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>Forensic Applications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section how-it-works-section" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">⚙️</span>
+                    How It Works
+                </h2>
+                <p class="section-subtitle">Three simple steps to transform sketches into realistic faces</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card glass-card fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Upload Sketch</h3>
+                    <p class="step-description">Upload a forensic sketch or hand-drawn face image to begin the reconstruction process.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step-card glass-card fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">GAN Processing</h3>
+                    <p class="step-description">Our advanced GAN model processes the sketch to extract and enhance facial features using deep learning.</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step-card glass-card fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21 15 16 10 5 21"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Generated Face</h3>
+                    <p class="step-description">A realistic face image is generated instantly, ready for forensic analysis and investigation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="section tech-section" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🧩</span>
+                    Technology Stack
+                </h2>
+                <p class="section-subtitle">Powered by cutting-edge AI and web technologies</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card glass-card fade-in">
+                    <div class="tech-icon python">🐍</div>
+                    <h3 class="tech-name">Python</h3>
+                    <p class="tech-desc">Core programming language</p>
+                </div>
+                <div class="tech-card glass-card fade-in">
+                    <div class="tech-icon pytorch">🔥</div>
+                    <h3 class="tech-name">PyTorch</h3>
+                    <p class="tech-desc">Deep learning framework</p>
+                </div>
+                <div class="tech-card glass-card fade-in">
+                    <div class="tech-icon flask">🌶️</div>
+                    <h3 class="tech-name">Flask</h3>
+                    <p class="tech-desc">Web framework</p>
+                </div>
+                <div class="tech-card glass-card fade-in">
+                    <div class="tech-icon gan">🧠</div>
+                    <h3 class="tech-name">GANs</h3>
+                    <p class="tech-desc">Generative Adversarial Networks</p>
+                </div>
+                <div class="tech-card glass-card fade-in">
+                    <div class="tech-icon html">💻</div>
+                    <h3 class="tech-name">HTML/CSS/JS</h3>
+                    <p class="tech-desc">Frontend technologies</p>
+                </div>
+                <div class="tech-card glass-card fade-in">
+                    <div class="tech-icon ai">🤖</div>
+                    <h3 class="tech-name">AI/ML</h3>
+                    <p class="tech-desc">Machine Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Try It Yourself Section -->
+    <section class="section try-it-section" id="try-it">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🎨</span>
+                    Try It Yourself
+                </h2>
+                <p class="section-subtitle">Upload a sketch and watch the magic happen</p>
+            </div>
+            
+            <div class="upload-container">
+                <div class="upload-section">
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div class="upload-area" id="uploadArea">
+                            <input type="file" id="sketchInput" name="sketch" accept="image/*" required>
+                            <label for="sketchInput" class="upload-label" id="uploadLabel">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="uploadIcon">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="17 8 12 3 7 8"></polyline>
+                                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                                </svg>
+                                <span id="uploadText">Click to upload or drag and drop</span>
+                                <span class="file-info" id="fileInfo">PNG, JPG, JPEG up to 16MB</span>
+                            </label>
+                            <div class="preview-container" id="previewContainer" style="display: none;">
+                                <img id="previewImage" alt="Preview">
+                                <button type="button" class="remove-btn" id="removeBtn" aria-label="Remove image">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="submit" class="generate-btn" id="generateBtn" disabled>
+                            <span>Generate Face</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+
+                </div>
+
+                <div class="result-section" id="resultSection" style="display: none;">
+                    <h3 class="result-title">Generated Face</h3>
+                    <div class="comparison-container">
+                        <div class="comparison-item">
+                            <h4>Your Sketch</h4>
+                            <div class="image-container">
+                                <img id="sketchPreview" alt="Your sketch">
+                            </div>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="comparison-item">
+                            <h4>Generated Face</h4>
+                            <div class="image-container">
+                                <img id="generatedImage" alt="Generated face">
+                            </div>
+                            <button class="download-btn" id="downloadBtn" aria-label="Download image">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loading" id="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Generating...</p>
+                </div>
+
+                <div class="error" id="error" style="display: none;">
+                    <p id="errorMessage"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Forensic Sketching using GAN</h4>
+                    <p class="footer-text">Where AI meets investigation</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#technology">Technology</a>
+                        <a href="#try-it">Try It</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Forensic Sketching using GAN | Powered by AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
