@@ -25,12 +25,10 @@ The GAN generator weights are hosted on Google Drive.
    `model/generator_final.pth`  
 
 ## Quick Start
-1. **Clone & enter the folder**
+1. **Clone the repository**
    ```bash
-   git clone <repo-url>
-   cd "D:\Projects\gan final"
-   ```
-   
+   git clone https://github.com/KrishnendraSamarth/Forensic-Sketching-Using-GAN.git
+
 2. **Create + activate a virtual environment**
    ```bash
    python -m venv venv
@@ -97,5 +95,5 @@ static/script.js           # Client logic
 - Designed for local demos; harden the Flask app before deploying publicly.
 - The repo ignores `model/generator_final.pth`, so keep your trained weights backed up elsewhere.
 
-Happy generating! 🎨✨
+Happy generating! 
 
