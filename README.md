@@ -50,12 +50,30 @@ The GAN generator weights are hosted on Google Drive.
 6. **Open the UI** – browse to `http://localhost:5000`, upload a sketch, press **Generate Face**.
 
 ## Screenshots 
-   ```markdown
-   ![UI](static\screenshots\home.png)
-   ![Upload flow](static\screenshots\upload.png)
-   ![Working](static\screenshots\working.png)
-   ![Result preview](static\screenshots\generate.png)
-   ```
+  <p align="center">
+  <img src="static/screenshots/home.png" width="600">
+  <br>
+  <em>Home UI</em>
+</p>
+
+<p align="center">
+  <img src="static/screenshots/upload.png" width="600">
+  <br>
+  <em>Upload Flow</em>
+</p>
+
+<p align="center">
+  <img src="static/screenshots/working.png" width="600">
+  <br>
+  <em>Processing State</em>
+</p>
+
+<p align="center">
+  <img src="static/screenshots/generate.png" width="600">
+  <br>
+  <em>Generated Output</em>
+</p>
+
 
 ## Project Layout
 ```
