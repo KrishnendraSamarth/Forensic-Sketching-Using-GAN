@@ -15,12 +15,22 @@ This project follows the **pix2pix** image-to-image translation setup:
 
 Because the architecture matches the classic pix2pix paper, you can fine-tune it in Google Colab (or any PyTorch environment), export the generator weights, and drop them straight into this app for inference.
 
+## 🎯 Download Pretrained GAN Model
+
+The GAN generator weights are hosted on Google Drive.  
+1. Download from this link:  
+   https://drive.google.com/drive/folders/1kUufxbNeugVKKP-rk_IGFNbkTW_k36UK?usp=sharing  
+2. Save the file as `generator_final.pth`.  
+3. Place it under the `model/` directory of the project:  
+   `model/generator_final.pth`  
+
 ## Quick Start
 1. **Clone & enter the folder**
    ```bash
    git clone <repo-url>
    cd "D:\Projects\gan final"
    ```
+   
 2. **Create + activate a virtual environment**
    ```bash
    python -m venv venv
@@ -39,18 +49,13 @@ Because the architecture matches the classic pix2pix paper, you can fine-tune it
    ```
 6. **Open the UI** – browse to `http://localhost:5000`, upload a sketch, press **Generate Face**.
 
-## Screenshots (Optional)
-1. Save PNG/JPG screenshots in `static/screenshots/`. Suggested files:
-   ```
-   static/screenshots/upload.png
-   static/screenshots/result.png
-   ```
-2. Reference them in this README:
+## Screenshots 
    ```markdown
-   ![Upload flow](static/screenshots/upload.png)
-   ![Result preview](static/screenshots/result.png)
+   ![UI](static\screenshots\home.png)
+   ![Upload flow](static\screenshots\upload.png)
+   ![Working](static\screenshots\working.png)
+   ![Result preview](static\screenshots\generate.png)
    ```
-3. Commit the images so they show up on GitHub.
 
 ## Project Layout
 ```
