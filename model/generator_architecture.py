@@ -96,15 +96,6 @@ class Generator(nn.Module):
 
 
 def get_generator(**kwargs):
-    """
-    Factory function to create a generator instance.
-    You can add initialization parameters here if needed.
     
-    Args:
-        **kwargs: Any parameters your generator needs during initialization
-        
-    Returns:
-        Generator instance
-    """
     return Generator(**kwargs)
 
